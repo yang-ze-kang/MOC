@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=1 python train.py\
+    --dataset_dir /home/yzk/lung/dataset \
+    --results_dir results_new \
+    --study KIRC\
+    --data_mode omic\
+    --model_type snn\
+    --model_size_omic small\
+    --target_gene signatures_rnaseq\
+    --reg_type omic\
+    --bag_loss contrast\
+    --gc 128\
+    --lr 0.0002\
+    --n_classes 1 
